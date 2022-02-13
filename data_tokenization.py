@@ -13,6 +13,9 @@ itos = ['<unk>']
 stoi = {'<unk>': 0}
 indices = []
 
+def tokenize_sentence(sentence, vocab):
+    pass
+
 def tokenize_data(dir, window_size=150, mode='train'):
     sentences_pos = []
     sentences_neg = []
