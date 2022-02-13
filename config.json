@@ -4,5 +4,14 @@
         "data_dir": "data/aclImdb/",
         "embedding_dim":300,
         "path_to_save": "data/"
+    },
+    "MODEL" :{
+        "out_channels": 40,
+        "n_blocks": 2, 
+        "hidden_dim": 32,
+        "num_layers": 2,
+        "dropout": 0.2, 
+        "bidirectional": true,
+        "linear_dim": 100
     }
 }

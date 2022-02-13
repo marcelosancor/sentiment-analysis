@@ -120,10 +120,8 @@ if __name__ == '__main__':
     print(' -- positives', count[1])
     print(' -- negatives', count[0])
 
-
-
     data_test.to_csv(os.path.join(config["path_to_save"], "test.csv"))
-    print('Test dataset saved in ', os.path.join(config["path_to_save"], "test.csv") ,'with ', len(data_train), ' examples: ')
+    print('Test dataset saved in ', os.path.join(config["path_to_save"], "test.csv") ,'with ', len(data_test), ' examples: ')
     count = data_test[config["window_size"]].value_counts()
     print(' -- positives', count[1])
     print(' -- negatives', count[0])
